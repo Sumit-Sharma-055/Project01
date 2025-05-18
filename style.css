@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1496309732348-3627f3f040ee') no-repeat center center/cover;
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 20px 60px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional overlay */
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #f5d742;
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.yellow {
+  background-color: #ffde3c;
+  color: #000;
+}
+
+.btn.transparent {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
